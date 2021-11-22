@@ -1,4 +1,3 @@
-
 class Stack:
     def __init__(self):
         self.numbers = []
@@ -17,7 +16,6 @@ class Stack:
         return self.numbers.pop()
 
 class PositiveNumberStack(Stack):
-    
     def push(self, n) -> None:
         if n < 0 or self.current_size == 3:
             raise ValueError
@@ -25,9 +23,9 @@ class PositiveNumberStack(Stack):
         self.numbers.append(n)
 
 class NegativeNumberStack(Stack):
-
     def push(self, n) -> None:
         if n > 0 or self.current_size == 3:
             raise ValueError
         self.current_size += 1
         self.numbers.append(n)
+        
