@@ -41,7 +41,7 @@ def test_max_size():
     with pytest.raises(ValueError):
         my_stack.push(4)
 
-def test_str_method(self):
+def test_str_method():
     my_stack = PositiveNumberStack()
     my_stack.push(1)
     assert str(my_stack) == "Stack with 1 object(s)"
